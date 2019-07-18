@@ -26,7 +26,6 @@ public class HelloActivity extends RedefActivity {
     public void onCreate() {
         fragmentController.startTransaction()
                 .useFragment(HelloFragment.class)
-                //.withParameter(todoElement)
                 .commit();
     }
 
