@@ -1,6 +1,7 @@
 package com.prime.recipejungle.activities;
 
 import com.prime.recipejungle.fragments.HelloFragment;
+import com.prime.redef.app.App;
 import com.prime.redef.app.RedefActivity;
 import com.prime.redef.app.configs.ActivityConfig;
 
@@ -27,6 +28,8 @@ public class HelloActivity extends RedefActivity {
         fragmentController.startTransaction()
                 .useFragment(HelloFragment.class)
                 .commit();
+
+        App.startActivity(androidActivity, LoginActivity.class, null);
     }
 
     @Override
